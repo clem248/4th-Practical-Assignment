@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracassign4.CipherDecryptionController">
+   <children>
+
+      <Label layoutX="70.0" layoutY="58.0" text="Write your text to be encrypted" />
+      <Label fx:id="EncryptedText" layoutX="70.0" layoutY="294.0" prefHeight="175.0" prefWidth="109.0" text="Your encrypted text" />
+      <Button fx:id="DecryptButton" layoutX="523.0" layoutY="248.0" mnemonicParsing="false" onAction="#onDecryptButtonClick" text="Decrypt" />
+      <Label fx:id="DecryptedText" layoutX="493.0" layoutY="311.0" prefHeight="141.0" prefWidth="125.0" text="Your decrypted text" wrapText="true" />
+      <TextArea fx:id="TextZone" layoutX="366.0" layoutY="93.0" prefHeight="105.0" prefWidth="200.0" />
+      <Button fx:id="CountLetterButton" layoutX="366.0" layoutY="248.0" mnemonicParsing="false" onAction="#CountLetterButtonOnCick" text="CountLetters" />
+      <Label fx:id="MostCommonLettersLabel" layoutX="357.0" layoutY="311.0" prefHeight="141.0" prefWidth="102.0" text="Most Common Letters" />
+      <Label layoutX="391.0" layoutY="58.0" text="Write you encrypted text" />
+      <TextArea fx:id="EncryptionTextZone" layoutX="62.0" layoutY="93.0" prefHeight="111.0" prefWidth="206.0" />
+      <Button fx:id="EncryptionButton" layoutX="128.0" layoutY="248.0" mnemonicParsing="false" text="Encrypt" />
+   </children>
+</AnchorPane>
