@@ -4,19 +4,40 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracassign4.CipherDecryptionController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="637.0" style="-fx-background-color: E5E5CB;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pracassign4.CipherDecryptionController">
    <children>
-
-      <Label layoutX="70.0" layoutY="58.0" text="Write your text to be encrypted" />
-      <Label fx:id="EncryptedText" layoutX="70.0" layoutY="294.0" prefHeight="175.0" prefWidth="109.0" text="Your encrypted text" />
-      <Button fx:id="DecryptButton" layoutX="523.0" layoutY="248.0" mnemonicParsing="false" onAction="#onDecryptButtonClick" text="Decrypt" />
-      <Label fx:id="DecryptedText" layoutX="493.0" layoutY="311.0" prefHeight="141.0" prefWidth="125.0" text="Your decrypted text" wrapText="true" />
-      <TextArea fx:id="TextZone" layoutX="366.0" layoutY="93.0" prefHeight="105.0" prefWidth="200.0" />
-      <Button fx:id="CountLetterButton" layoutX="366.0" layoutY="248.0" mnemonicParsing="false" onAction="#CountLetterButtonOnCick" text="CountLetters" />
-      <Label fx:id="MostCommonLettersLabel" layoutX="357.0" layoutY="311.0" prefHeight="141.0" prefWidth="102.0" text="Most Common Letters" />
-      <Label layoutX="391.0" layoutY="58.0" text="Write you encrypted text" />
-      <TextArea fx:id="EncryptionTextZone" layoutX="62.0" layoutY="93.0" prefHeight="111.0" prefWidth="206.0" />
-      <Button fx:id="EncryptionButton" layoutX="128.0" layoutY="248.0" mnemonicParsing="false" text="Encrypt" />
+      <Button fx:id="DecryptButton" layoutX="402.0" layoutY="299.0" mnemonicParsing="false" onAction="#onDecryptButtonClick" prefHeight="25.0" prefWidth="84.0" text="Decrypt" textFill="#1a120b">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font></Button>
+      <Label fx:id="DecryptedText" layoutX="386.0" layoutY="337.0" prefHeight="141.0" prefWidth="142.0" text="Your decrypted text" textFill="#1a120b" wrapText="true">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font></Label>
+      <TextArea fx:id="TextZone" layoutX="120.0" layoutY="93.0" prefHeight="189.0" prefWidth="398.0" promptText="Your text..." />
+      <Button fx:id="CountLetterButton" accessibleRoleDescription="t" layoutX="150.0" layoutY="299.0" mnemonicParsing="false" onAction="#CountLetterButtonOnCick" text="CountLetters" textFill="#1a120b">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font></Button>
+      <Label fx:id="MostCommonLettersLabel" layoutX="120.0" layoutY="337.0" prefHeight="141.0" prefWidth="168.0" text="Most Common Letters" textFill="#1a120b">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font></Label>
+      <Label layoutX="169.0" layoutY="40.0" text="Write you encrypted text" textFill="#3c2a21">
+         <font>
+            <Font name="Century" size="26.0" />
+         </font></Label>
+      <Button fx:id="CopyButton" layoutX="553.0" layoutY="395.0" mnemonicParsing="false" onAction="#CopyButtonOnClick" text="Copy">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="CopyButton2" layoutX="53.0" layoutY="396.0" mnemonicParsing="false" onAction="#CopyButtonOnClick2" text="Copy">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

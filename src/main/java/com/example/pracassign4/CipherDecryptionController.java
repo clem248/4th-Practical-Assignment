@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 
 public class CipherDecryptionController {
     @FXML
@@ -30,7 +32,23 @@ public class CipherDecryptionController {
         MostCommonLettersLabel.setText(str);
     }
 
+    @FXML
+    protected void CopyButtonOnClick(ActionEvent event){
+        String text = DecryptedText.getText();
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        ClipboardContent content = new ClipboardContent();
+        content.putString(text);
+        clipboard.setContent(content);
+    }
 
+    @FXML
+    protected void CopyButtonOnClick2(ActionEvent event){
+        String text = MostCommonLettersLabel.getText();
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        ClipboardContent content = new ClipboardContent();
+        content.putString(text);
+        clipboard.setContent(content);
+    }
 
 
 }
